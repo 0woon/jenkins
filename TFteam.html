@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        font-size : 14px;
+        margin : 0;
+    }
+
+    h2 {
+        color:red;
+    }
+    h1, h2, h3 {
+        margin : 0;
+    }
+
+    .section {
+        background-color: bisque;
+        padding : 5px;
+    }
+    
+    #top {
+        height : 10vh;
+    }
+
+    #mid {
+        height : 80vh;
+        background-color: aqua;
+    }
+
+    #bottom {
+        height : 10vh;
+    }
+
+    #jungle {
+        background-color: red;
+        width:100px;
+        height:100px;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 50%;
+        color:green;
+        font-size: 2rem;
+        
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="section" id="top">
+        <div>
+            <h2>TOP</h2>
+        </div>
+        
+    </div>
+    <div class="section" id="mid">
+        <h1 class="build"> MID</h1>
+
+    </div>
+    <div class="section" id="bottom">
+        <h3>BOTTOM</h3>
+    </div>
+    <div id="jungle">
+        <div>정글</div>
+    </div>
+
+</body>
+<script>
+
+    $('.build').css('color', 'blue');
+
+    var a = 1;
+    a++;
+
+    $(document).ready(function(){
+        alert(a);
+    });
+
+    alert("뭐가 꼬인거지 대체");
+
+</script>
+</html>
